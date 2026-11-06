@@ -13,12 +13,12 @@ An enterprise-grade, asynchronous data synchronization engine built in **Go** an
 
 ```mermaid
 flowchart TD
-    Client[Enterprise Clients / Multi-Format Files] -->|HTTPS Upload| Gateway[API Ingestion Gateway]
-    Gateway -->|Token & Custom Claims Validation| EntraID[Microsoft Entra ID / Azure AD]
-    Gateway -->|Worker Pool Distribution| SyncEngine[DataSync Engine Worker Pool]
-    SyncEngine -->|Streaming SHA-256 Checksum| Validator[Integrity & Schema Validator]
-    SyncEngine -->|Encrypted Storage| BlobStorage[(Azure Blob Storage)]
-    SyncEngine -->|Telemetry & Metrics| Metrics[Prometheus / Azure Monitor]
+    Client["Enterprise Clients / Multi-Format Files"] -->|"HTTPS Upload"| Gateway["API Ingestion Gateway"]
+    Gateway -->|"Token & Custom Claims Validation"| EntraID["Microsoft Entra ID / Azure AD"]
+    Gateway -->|"Worker Pool Distribution"| SyncEngine["DataSync Engine Worker Pool"]
+    SyncEngine -->|"Streaming SHA-256 Checksum"| Validator["Integrity & Schema Validator"]
+    SyncEngine -->|"Encrypted Storage"| BlobStorage[("Azure Blob Storage")]
+    SyncEngine -->|"Telemetry & Metrics"| Metrics["Prometheus / Azure Monitor"]
 ```
 
 ---
