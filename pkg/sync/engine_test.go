@@ -67,3 +67,4 @@ func TestEntraIDValidator(t *testing.T) {
 		t.Fatal("expected unauthorized tenant to fail")
 	}
 }
+

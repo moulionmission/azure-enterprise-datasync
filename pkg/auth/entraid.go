@@ -44,3 +44,4 @@ func (v *EntraIDValidator) ValidateToken(claims *Claims, requiredRole string) er
 
 	return errors.New("insufficient role privileges")
 }
+

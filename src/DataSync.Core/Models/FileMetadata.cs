@@ -23,3 +23,4 @@ namespace DataSync.Core.Models
         public ProcessingStatus Status { get; set; } = ProcessingStatus.Pending;
     }
 }
+

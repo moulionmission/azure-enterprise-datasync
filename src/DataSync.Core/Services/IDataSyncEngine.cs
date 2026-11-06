@@ -18,3 +18,4 @@ namespace DataSync.Core.Services
             CancellationToken cancellationToken = default);
     }
 }
+

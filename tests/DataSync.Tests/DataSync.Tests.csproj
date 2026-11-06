@@ -15,3 +15,4 @@
     <ProjectReference Include="..\..\src\DataSync.Security\DataSync.Security.csproj" />
   </ItemGroup>
 </Project>
+
